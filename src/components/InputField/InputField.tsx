@@ -1,4 +1,5 @@
 import {FC} from "react";
+import css from './InputField.module.css'
 
 interface InputFieldProps {
     text: string,
@@ -7,8 +8,9 @@ interface InputFieldProps {
 }
 const InputField: FC<InputFieldProps> = ({text, handleSubmit, handleInput}) => {
     return <label>
-        <input value={text} onChange={(e) => handleInput(e.target.value)}/>
-        <button onClick={handleSubmit}>Add todo</button>
+        <input className={css.task_input} value={text} placeholder={"New task"}
+               onChange={(e) => handleInput(e.target.value)} />
+        <button className={css.submit_button} onClick={handleSubmit}>Add</button>
     </label>
 };
 

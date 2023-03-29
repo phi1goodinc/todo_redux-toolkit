@@ -1,5 +1,5 @@
-import TodoItem from './ToDoItem';
-import {useAppSelector} from "../hook";
+import TodoItem from '../ToDoItem/ToDoItem';
+import {useAppSelector} from "../../hook";
 
 const TodoList = () => {
     const todos = useAppSelector(state => state.todos.list)

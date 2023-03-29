@@ -1,0 +1,19 @@
+.task_input {
+    width: 160px;
+    border: 2px solid black;
+    border-right: none;
+}
+
+.task_input::placeholder {
+    text-align: center;
+}
+
+.task_input:focus {
+    border-color: grey;
+}
+
+.submit_button {
+    color: white;
+    background-color: black;
+}
+

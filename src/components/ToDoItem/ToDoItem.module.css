@@ -1,0 +1,17 @@
+.delete {
+    width:15px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.one_task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.task_done  {
+    text-decoration: line-through;
+    color: grey;
+}
